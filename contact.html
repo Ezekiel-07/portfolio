@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Ezekiel Tomekorsu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Ezekiel Tomekorsu</div>
+    <ul class="nav-links">
+      <li><a href='/home.html'>Home</a></li>
+      <li><a href='/profile.html'>Profile</a></li>
+      <li><a href='/research.html'>Research</a></li>
+      <li><a href='/contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+  <h1 class="page-title">Get In Touch</h1>
+  <p class="page-subtitle">
+    Let's connect and discuss opportunities in cybersecurity, Web design and Database Design
+  </p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-method">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h3 class="contact-title">Email</h3>
+        <p class="contact-detail">
+          <a href="mailto:etomekorsu@gmail.com">etomekorsu@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="contact-method">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <h3 class="contact-title">Phone</h3>
+        <p class="contact-detail">
+          Mobile: <a href="tel:+233247194519">+233 (59)966-7312</a>
+        </p>
+      </div>
+
+
+ <div class="contact-form">
+  <div class="form-container">
+    <h3 class="form-title">Send a Message</h3>
+
+    <form action="https://formsubmit.co/etomekorsu@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="success-message" id="successMessage">
+      Thank you! Your message has been sent successfully.
+    </div>
+    
+  </div>
+</div>
+
+
+    <div class="social-section">
+  <h3 class="social-title">Connect With Me</h3>
+  <div class="social-icons">
+    <a href="mailto:ezekiel104240750n@ktu.edu.gh" class="social-icon email-icon" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ezekiel-tomeorsu-8b9108377/" class="social-icon linkedin-icon" title="LinkedIn" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://facebook.com/Ezekiel Tomekorsu" class="social-icon facebook-icon" title="Facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+     <a href="https://x.com/Ezekiel 8" class="social-icon twitter-icon" title="X (formerly Twitter)" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+  </div>
+</div>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
