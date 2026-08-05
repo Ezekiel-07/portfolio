@@ -1,0 +1,47 @@
+/* Header Container */
+.card-header {
+  display: flex;
+  align-items: center; /* Keeps icon aligned with text */
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* Responsive Yellow Icon Accent */
+.yellow-icon {
+  background-color: #e2ff00; /* Bright Yellow */
+  color: #3b0043;
+  width: 36px;
+  height: 36px;
+  min-width: 36px; /* Prevents icon from shrinking on small screens */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Fluid Responsive Heading */
+.card-header h2 {
+  color: #e2ff00;
+  /* Dynamic font scaling: min 1.2rem, scales with screen width (4vw), max 1.8rem */
+  font-size: clamp(1.2rem, 4vw, 1.8rem); 
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: break-word; /* Prevents text overflowing on narrow screens */
+}
+
+/* Mobile Media Query Adjustments */
+@media (max-width: 480px) {
+  .card-header {
+    gap: 8px; /* Tighter gap for mobile */
+  }
+
+  .yellow-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.9rem;
+  }
+}
