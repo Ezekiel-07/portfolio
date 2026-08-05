@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(83, 3, 83);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgb(116, 7, 116);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+nav:hover {
+  background: rgb(141, 5, 141);
+  box-shadow: rgb(116, 7, 116);
+}
+
+
 /* Header Container */
 .card-header {
   display: flex;
@@ -44,4 +77,14 @@
     min-width: 30px;
     font-size: 0.9rem;
   }
+}
+
+
+.page-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: hsl(56, 89%, 50%);
+  text-align: center;
+  animation: fadeInDown 1s ease-out;
 }
